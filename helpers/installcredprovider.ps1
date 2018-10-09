@@ -9,7 +9,7 @@ param(
     [switch]$AddNetfx,
     [switch]$Force
 )
-
+$AddNetfx = $true;
 $script:ErrorActionPreference='Stop'
 
 # Without this, System.Net.WebClient.DownloadFile will fail on a client with TLS 1.0/1.1 disabled
